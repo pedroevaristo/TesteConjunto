@@ -1,18 +1,21 @@
-package model;
+package model;//Domain model
 
 public class userClient {
+	private Long Id;
 	private String username;
     private String password;
     private String email;
     private String cpf;
     private String Address;
-	public userClient(String username, String password, String email, String cpf, String address) {
-		super();
-		this.username = username;
-		this.password = password;
-		this.email = email;
-		this.cpf = cpf;  // usar o validador de cpf seja criando proprio ou usando API
-		Address = address;
+    
+	public userClient(Long Id, String username, String password, String email, String cpf, String address) {
+		//super();
+		this.Id = Id;
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.cpf = cpf;  // usar o validador de cpf seja criando proprio ou usando API
+        Address = address;
 	}
 	
 	
